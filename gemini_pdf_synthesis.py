@@ -266,7 +266,7 @@ def select_pdfs_for_analysis():
 def main():
     parser = argparse.ArgumentParser(
         description='Synthesize research papers using Gemini AI',
-        epilog='Example: ls *.pdf | python3 gemini_pdf_synthesis.py > synthesis.md'
+        epilog='Example: ls *.pdf | gemini_pdf_synthesis.py > synthesis.md'
     )
     parser.add_argument(
         '-o', '--output', 

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Path to your Python script
+# Make sure to update this path to where you save askllm.py
+ASKLLM_SCRIPT="/users/trond/code/local_tools/askllm.py"
+system_message="you are a macos terminal helper. If posed with a question like -how do i .. - just answer with the actual commands needed, otherwise answer as a helpful assistant but have an objective, even tone and avoid any kind of subjective adjectives like fantastic, interesting, important, intricate and so on"
+# Pass all command-line arguments to the Python script
+# "$ASKLLM_SCRIPT" "$@" -s $system_message -m gemma3n:e2b
+"$ASKLLM_SCRIPT" -s "$system_message" -m gemma3n:e2b "$@"

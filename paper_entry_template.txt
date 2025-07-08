@@ -1,0 +1,48 @@
+
+## Begin MediaWiki Article Template for Academic Papers ##
+==Info==
+* Title: [[has title::{{TITLE}}]]
+* Author(s): [[has author::{{AUTHOR}}]]
+* Subject: [[has subject::{{SUBJECT}}]]
+* Relase date: [[released::{{YEAR}}]]
+* Journal: [[published in::{{journal name}}]]
+* Volume, issue: [[journal volume::{{volume}}]], [[journal issue::{{issue}}]]
+* Pages: [[journal pages::{{pages}}]]
+* Reports: 
+** [[reports::{{key_takeaway}}]] - sentences describing findings etc
+* Cite: {{APA citation}}
+* Bibtex:
+<syntaxhighlight lang="latex">
+{{bibtex entry}}
+</syntaxhighlight>
+
+==Notes==
+{{Summary of paper}}
+
+[[Category:Article]]
+
+## End MediaWiki Article Template for Academic Papers ##
+
+
+## Begin MediaWiki Review Article Template for Academic Papers ##
+==Info==
+* Title: [[has title::{{TITLE}}]]
+* Author(s): [[has author::{{AUTHORS}}]]
+* Relase date: [[released::{{YEAR}}]]
+* Journal: [[published in::{{journal name}}]]
+* Volume, issue: [[journal volume::{{volume}}]], [[journal issue::{{issue}}]]
+* Pages: [[journal pages::{{pages}}]]
+* Cite: {{APA citation}}
+* Bibtex:
+<syntaxhighlight lang="latex">
+{{bibtex entry}}
+</syntaxhighlight>
+
+==Notes==
+* [[has subject::{{Subject Name}}]]
+* [[{{Subject Name}}::{{A key fact, insight, or summary about this subject from the review}}]]`
+
+
+[[Category:Review article]]
+
+## End MediaWiki Review Article Template for Academic Papers ##

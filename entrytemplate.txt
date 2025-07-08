@@ -1,0 +1,46 @@
+
+
+[[{{TOPIC}}]]
+
+==Intuition==
+'''{{TOPIC}}''' entails ...
+
+See also:
+* [[{{some associated topic}}]] - {{explanation of relation to main topic}}
+==Properties==
+* [[displays::{{property if appropriate }}]]
+==Subsystems==
+* [[consists of::{{subsystem if appropriate }}]]
+==Types==
+* [[has subtype::{{subtype if appropriate }}]]
+==Pages with this as subject==
+{{#ask: 
+[[has subject::{{PAGENAME}}]] AND
+[[Category:Article]]
+|?released
+|?reports
+|sort=released
+|order=desc
+}}
+
+===Quotes===
+'''Books'''
+{{#ask: 
+[[Category:Book]] AND [[has subject::{{PAGENAME}}]]
+|?released
+|?{{PAGENAME}}
+|sort=released
+|order=desc}}
+'''Reviews'''
+{{#ask: 
+[[Category:Review article]] AND [[has subject::{{PAGENAME}}]]
+|?released
+|?{{PAGENAME}}
+|sort=released
+|order=desc}}
+
+
+===Other===
+{{#ask:[[has subject::{{PAGENAME}}]]|format=ul}}
+
+[[Category:{{appropriate category}}]]

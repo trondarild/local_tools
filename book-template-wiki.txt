@@ -1,0 +1,12 @@
+==Info==
+* Title: [[has title::title]]
+* Author(s): [[has author::author]]
+* Subject: [[has subject::subject]]
+* Relase date: [[released::year]]
+* Cite:
+
+==Notes==
+==Contents==
+[[Category:Book]]
+[[Category:Fiction (my books)]]
+

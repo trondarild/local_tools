@@ -1,0 +1,95 @@
+== Cognitive cost ==
+[[Cognitive Cost]]
+
+==Intuition==
+'''Cognitive Cost''' entails the mental effort required to perform a cognitive task. It reflects the resources consumed by the [[brain]] during information processing, decision-making, and problem-solving. High cognitive cost can lead to [[cognitive overload]], reduced performance, and increased error rates. Understanding cognitive cost is crucial in fields like [[human-computer interaction]], [[psychology]], and [[education]] to design systems and environments that minimize mental strain and optimize cognitive performance.
+
+See also:
+* [[Cognitive Load]] - A related concept, but cognitive load refers to the total amount of information that the working memory can hold at one time, while cognitive cost emphasizes the mental effort required to process that information.
+==Properties==
+* [[displays::Attention Demand]]
+==Subsystems==
+* [[consists of::Working Memory Load]]
+==Types==
+* [[has subtype::Switching Cost]]
+==Pages with this as subject==
+{{#ask: 
+[[has subject::{{PAGENAME}}]] AND
+[[Category:Article]]
+|?released
+|?reports
+|sort=released
+|order=desc
+}}
+
+===Quotes===
+'''Books'''
+{{#ask: 
+[[Category:Book]] AND [[has subject::{{PAGENAME}}]]
+|?released
+|?{{PAGENAME}}
+|sort=released
+|order=desc}}
+'''Reviews'''
+{{#ask: 
+[[Category:Review article]] AND [[has subject::{{PAGENAME}}]]
+|?released
+|?{{PAGENAME}}
+|sort=released
+|order=desc}}
+
+
+===Other===
+{{#ask:[[has subject::{{PAGENAME}}]]|format=ul}}
+
+[[Category:Cognitive Science]]
+
+
+== Attention span ==
+[[Attention span]]
+
+==Intuition==
+'''Attention span''' entails the length of time a person can concentrate on a task or activity without becoming distracted. It's influenced by various factors, including [[motivation]], [[interest]], and the presence of competing stimuli.  A short attention span can be a symptom of underlying conditions like [[Attention-deficit/hyperactivity disorder|ADHD]].  Understanding attention span is important in fields such as [[psychology]], [[education]], and [[cognitive science]].
+
+See also:
+* [[Working memory]] -  Closely related to attention span, as it holds information temporarily for processing.
+==Properties==
+* [[displays::Duration]]
+==Subsystems==
+* [[consists of::Sustained attention]]
+* [[consists of::Selective attention]]
+==Types==
+* [[has subtype::Short attention span]]
+* [[has subtype::Long attention span]]
+==Pages with this as subject==
+{{#ask: 
+[[has subject::{{PAGENAME}}]] AND
+[[Category:Article]]
+|?released
+|?reports
+|sort=released
+|order=desc}}
+
+===Quotes===
+'''Books'''
+{{#ask: 
+[[Category:Book]] AND [[has subject::{{PAGENAME}}]]
+|?released
+|?{{PAGENAME}}
+|sort=released
+|order=desc}}
+'''Reviews'''
+{{#ask: 
+[[Category:Review article]] AND [[has subject::{{PAGENAME}}]]
+|?released
+|?{{PAGENAME}}
+|sort=released
+|order=desc}}
+
+
+===Other===
+{{#ask:[[has subject::{{PAGENAME}}]]|format=ul}}
+
+[[Category:Cognitive Process]]
+
+

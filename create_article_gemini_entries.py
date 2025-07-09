@@ -85,7 +85,7 @@ Analyze the provided research paper PDF and generate a MediaWiki entry.
 4.  **Populate the Template:** Fill the extracted information into the placeholders (`{{TITLE}}`, `{{AUTHORS}}`, `{{YEAR}}`, `{{KEY_TAKEAWAYS}}`) in the provided template.
 
 Note: the template block contains two placeholders: the first for a study, the second for a review paper; only use the appropriate one
-
+Note: Text used for filling the [[reports::..]] and [[<subject name>::..]] fields should be concise and informative, max 180 characters.
 **Template:**
 ---
 {template}

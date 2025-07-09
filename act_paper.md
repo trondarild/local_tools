@@ -37,10 +37,10 @@
 
 The composition of two morphisms `f: A -> B` and `g: B -> C` is a morphism `g ∘ f: A -> C`, which represents the sequential execution of the research processes.
 
-**Identity Morphism:**
+**Sorted chains:**
 
-- id<sub>[Object 1]</sub>: Represents the object existing without transformation.
-- id<sub>[Object 2]</sub>: Represents the object existing without transformation.
+- (Initial object 1) [Morphism_1a] .. [Morphism_n_a] (Terminal object 1): The longest found compositional chain
+- (Initial object 2) [Morphism_1b] .. [Morphism_n-1_b] (Terminal object 2): The second longest found compositional chain
 - ...
 
 **Notes:**
@@ -74,12 +74,9 @@ Output: ## Category: Study of Sleep Deprivation and Cognition
 
 The composition `Interpret ∘ PerformT_Test` represents the end-to-end analysis pipeline: taking the raw test data from the groups, performing a statistical comparison, and then interpreting the outcome.
 
-**Identity Morphism:**
-
-- id<sub>ControlGroup</sub>: The control group, unchanged.
-- id<sub>TestGroup</sub>: The test group, unchanged.
-- id<sub>CognitiveTestData</sub>: The raw data, untransformed.
-- ...and so on for all other objects.
+**Sorted chains:**
+- (ParticipantPool) -> [AssignToTest] [AdministerTest] [PerformT_Test] [Interpret] -> (Conclusion)
+- ...and so on for all other chains .
 
 **Notes:**
 

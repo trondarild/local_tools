@@ -113,7 +113,8 @@ def main():
         Use neutral, tempered, and professional language, avoid any kind of terms indicating subjectivity like 'fascinating', 'intricate' and so on."""
     sys_msg = args.system_message if args.system_message else default_sys_msg
     # Read topics from stdin
-    topics = read_topics_from_stdin()
+    #topics = read_topics_from_stdin()
+    topics = sys.stdin # read all lines as single topic so can process papers
     
     if not topics:
         print("Error: No topics provided via stdin", file=sys.stderr)

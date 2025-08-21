@@ -1,0 +1,3 @@
+#!/bin/bash
+# example: ls test*.pdf | jpdfbookmarks > testbm.txt
+xargs -I {} /Applications/jpdfbookmarks-2.5.2/jpdfbookmarks {} -d

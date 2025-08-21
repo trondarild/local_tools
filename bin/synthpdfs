@@ -1,0 +1,2 @@
+#!/bin/bash
+/users/trond/code/local_tools/gemini_pdf_synthesis.py "$@"

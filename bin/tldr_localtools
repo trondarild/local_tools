@@ -1,0 +1,2 @@
+#!/bin/bash
+bat ~/.local/bin/tldr_info.txt

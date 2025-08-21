@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# wiki_tex_pipeline.sh
+#
+# Description: This script processes a LaTeX file using wiki_tex.py and then
+#              adds citations using add_citations.py, piping the output
+#              from the first script to the second.
+#
+# Usage: ./wiki_tex_pipeline.sh <input_file.tex> <references.bib>
+#
+# Example: ./wiki_tex_pipeline.sh my_document.tex my_refs.bib
+#
+# The output will be printed to standard output (typically your terminal),
+# so you might want to redirect it to a new file.
+# Example with redirection: ./wiki_tex_pipeline.sh my_document.tex my_refs. bib > processed_document.tex
+
+# Exit immediately if a command exits with a non-zero status.i
+set -e
+# Treat unset variables as an error.
+set -u
+
+# --- Configuration ---
+# Define the base directory for your Python scripts.
+# "~" expands to the user's home directory.
+WIKI_TEX_BASE_DIR="$HOME/code/wiki_tex"
+
+# Full paths to your Python scripts
+WIKI_TEX_SCRIPT="${WIKI_TEX_BASE_DIR}/wiki_tex.py"
+ADD_CITATIONS_SCRIPT="${WIKI_TEX_BASE_DIR}/add_citations.py"
+# --- End Configuration ---
+
+
+# Check if the correct number of arguments is provided
+if [ "$#" -ne 2 ]; then
+    echo "Error: Incorrect number of arguments."
+    echo "Usage: $(basename "$0") <input_file.tex> <references.bib>"
+    echo "Example: $(basename "$0") my_article.tex my_citations.bib"
+    exit 1
+fi
+
+# Assign arguments to meaningful variable names
+INPUT_TEX_FILE="$1"
+REFERENCES_BIB_FILE="$2"
+
+# --- Validate files and scripts exist ---
+if [ ! -f "$INPUT_TEX_FILE" ]; then
+    echo "Error: Input TeX file not found: '$INPUT_TEX_FILE'"
+    exit 1
+fi
+
+if [ ! -f "$REFERENCES_BIB_FILE" ]; then
+    echo "Error: References Bib file not found: '$REFERENCES_BIB_FILE'"
+    exit 1
+fi
+
+if [ ! -f "$WIKI_TEX_SCRIPT" ]; then
+    echo "Error: wiki_tex.py script not found at '$WIKI_TEX_SCRIPT'"
+    echo "Please check the WIKI_TEX_BASE_DIR configuration at the top of
+ this script."
+    exit 1
+fi
+
+if [ ! -f "$ADD_CITATIONS_SCRIPT" ]; then
+    echo "Error: add_citations.py script not found at
+ '$ADD_CITATIONS_SCRIPT'"
+    echo "Please check the WIKI_TEX_BASE_DIR configuration at the top of
+ this script."
+    exit 1
+fi
+# --- End validation ---
+
+echo "--- Starting WikiTex Processing ---"
+echo "Input TeX: '$INPUT_TEX_FILE'"
+echo "References Bib: '$REFERENCES_BIB_FILE'"
+echo "Processing..."
+
+# Execute the pipe
+# Use double quotes around variables to handle paths with spaces or special characters
+"$WIKI_TEX_SCRIPT" "$INPUT_TEX_FILE" | "$ADD_CITATIONS_SCRIPT" "$REFERENCES_BIB_FILE"
+
+#echo "--- Processing Complete ---"
+#echo "Output was printed to standard output."
+#echo "You might want to redirect it to a file, e.g.:"
+#echo "./$(basename "$0") \"$INPUT_TEX_FILE\" \"$REFERENCES_BIB_FILE\" >
+#output.tex"

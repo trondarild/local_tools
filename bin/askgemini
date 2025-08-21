@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# ask the gemini llm via api; provide an optional system message
+# example: echo "how do I list files sorted by time" | askgemini -s "answer with only the command"
+
+/users/trond/code/local_tools/ask_gemini.py "$@"

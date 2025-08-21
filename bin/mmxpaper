@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# create a memex entry based on a list of topics
+template_name="/users/trond/code/local_tools/paper_entry_template.txt"
+/users/trond/code/local_tools/create_article_gemini_entries.py -t "$template_name" "$@"

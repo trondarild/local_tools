@@ -1,0 +1,10 @@
+askllm 		# example: echo "how do I list files ordered on time" | askllm
+askllm 		# example: echo "how do I list files ordered on time" | askllm -s "answer as briefly as possible" -m llama3.2
+synthpdfs 	# example: ls *.pdf | synthpdfs > synthesis.md
+jpdfbm 		# example: ls test*.pdf | jpdfbm > testbm.txt
+pdf2cat		# example: ls test*.pdf | pdf2cat > testcat.md
+tabtowiki 	# example: cat bm.txt | tabtowiki > wikibm.txt
+mmxentry 	# example: echo "brain alpha wave" | mmxentry > entry.txt
+mmxpaper 	# example: ls Author* | mmxpaper 
+md2wiki		# example: cat input.md | md2wiki > result.md
+md2doc		# example: md2doc input.md output.docx
